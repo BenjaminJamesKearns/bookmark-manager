@@ -1,8 +1,8 @@
-feature 'viewing bookmarks' do 
-   scenario 'user can see their bookmarks' do 
+feature 'viewing bookmarks' do
+   scenario 'user can see their bookmarks' do
       visit ('/bookmarks')
-      expect(page).to have_content "https://www.google.co.uk/"
-      expect(page).to have_content "http://euw.op.gg/"
-      expect(page).to have_content "https://www.reddit.com/"
+      expect(page).to have_content "www.google.co.uk"
+      expect(page).to have_content "euw.op.gg"
+      expect(page).to have_content "www.reddit.com"
    end
 end
