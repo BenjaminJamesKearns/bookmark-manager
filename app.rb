@@ -20,5 +20,9 @@ class BookmarkManager < Sinatra::Base
     bookmark.create(url: params['url'])
     redirect '/bookmarks'
   end
+
+  post '/bookmarks/new' do
+    bookmark.create(url: params[:url], title: params[:title])
+  end
    run! if app_file == $0
 end
